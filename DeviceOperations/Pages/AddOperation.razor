@@ -1,0 +1,51 @@
+﻿@page "/addoperation"
+@using DeviceOperations.Data
+
+<h3>Add Operation</h3>
+
+<Modal Title="Add New Operation" @ref="modalRef">
+    <form>
+        <div class="form-group">
+            <label for="operationId">Operation ID</label>
+            <input type="text" class="form-control" id="operationId" @bind="newOperation.OperationID">
+        </div>
+        <div class="form-group">
+            <label for="operationName">Operation Name</label>
+            <input type="text" class="form-control" id="operationName" @bind="newOperation.Name">
+        </div>
+        <div class="form-group">
+            <label for="operationOrder">Operation Order In Which To Perform</label>
+            <input type="text" class="form-control" id="operationOrder" @bind="newOperation.OrderInWhichToPerform">
+        </div>
+        
+        <br />
+
+        <button type="button" class="btn btn-primary" @onclick="SaveOperation">Save</button>
+    </form>
+</Modal>
+
+@code {
+    bool showModal = true; // Set to true to make the modal visible by default
+    Operation newOperation = new Operation();
+    ElementReference modalRef;
+
+    [Inject]
+    IJSRuntime JSRuntime { get; set; }
+
+    void ShowModal()
+    {
+        JSRuntime.InvokeVoidAsync("showModal", modalRef);
+    }
+
+    void SaveOperation()
+    {
+        // You can add your logic to save the new operation here.
+        // For demonstration, I'm just showing an alert with the new operation details.
+        var message = $"Operation ID: {newOperation.OperationID}, Name: {newOperation.Name}, Order: {newOperation.OrderInWhichToPerform}";
+        JSRuntime.InvokeVoidAsync("alert", message);
+
+        newOperation = new Operation(); // Reset the form
+        showModal = false; // Hide the modal after adding
+        JSRuntime.InvokeVoidAsync("hideModal", modalRef);
+    }
+}

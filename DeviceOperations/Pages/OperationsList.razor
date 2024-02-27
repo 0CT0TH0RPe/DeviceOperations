@@ -1,0 +1,53 @@
+﻿@page "/operationlist"
+@using DeviceOperations.Data
+@using System.Collections.Generic
+
+<h3>Operation List</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Operation ID</th>
+            <th>Operation Name</th>
+            <th>Order In Which To Perform</th>
+            <th>Device ID</th>
+            <th>Device Name</th>
+            <th>DeviceType</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var operation in operations)
+        {
+            <tr>
+                <td>@operation.OperationID</td>
+                <td>@operation.Name</td>
+                <td>@operation.OrderInWhichToPerform</td>
+                <td>@operation.Device.DeviceID</td>
+                <td>@operation.Device.Name</td>
+                <td>@operation.Device.DeviceType</td>
+                <td>
+                    <button class="btn btn-danger" @onclick="() => RemoveOperation(operation.OperationID)">Remove</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    List<Operation> operations = new List<Operation>
+{
+        // Initialize this list with your operations data
+        new Operation { OperationID = 1, Name = "Operation Alpha", OrderInWhichToPerform = 1, Device = new Device { DeviceID = 1, Name = "BarScan", DeviceType = DeviceType.BarcodeScanner } },
+        new Operation { OperationID = 2, Name = "Operation Bravo", OrderInWhichToPerform = 2, Device = new Device { DeviceID = 2, Name = "Prnt", DeviceType = DeviceType.Printer } },
+        new Operation { OperationID = 3, Name = "Operation Charlie", OrderInWhichToPerform = 3, Device = new Device { DeviceID = 3, Name = "Cam", DeviceType = DeviceType.Camera } },
+        new Operation { OperationID = 4, Name = "Operation Delta", OrderInWhichToPerform = 4, Device = new Device { DeviceID = 4, Name = "STray", DeviceType = DeviceType.SocketTray } }
+        // Add more operations as needed
+    };
+
+    void RemoveOperation(int operationId)
+    {
+        // Implement the logic to remove the operation from the list
+        operations.RemoveAll(o => o.OperationID == operationId);
+    }
+}

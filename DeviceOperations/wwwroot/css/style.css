@@ -1,0 +1,59 @@
+/*
+Theme Name: Divi Child
+Theme URI: http://www.elegantthemes.com/gallery/divi/
+Template: Divi
+Author: Elegant Themes
+Author URI: http://www.elegantthemes.com
+Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
+Tags: responsive-layout,one-column,two-columns,three-columns,four-columns,left-sidebar,right-sidebar,custom-background,custom-colors,featured-images,full-width-template,post-formats,rtl-language-support,theme-options,threaded-comments,translation-ready
+Version: 3.13.1.1536756996
+Updated: 2018-09-12 14:56:36
+
+*/
+
+#top-menu li li {
+    padding-left: 0;
+    padding-right: 0;
+}
+#top-menu li li a {
+    width: 220px;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 8px 14px;
+}
+#footer-widgets {
+    padding-top: 3%;
+}
+.nav li li {
+    line-height: 14px;
+    font-family: 'Nunito',Helvetica,Arial,Lucida,sans-serif;
+}
+.nav li ul {
+    width: 220px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.nav li li ul {
+    top: -3px;
+    left: 220px;
+}
+.et_bloom_form_content {
+    padding: 2% 0 0;
+}
+.btn-inline .et_pb_button_module_wrapper {
+    display: inline-block;
+    margin: 0 5px;
+}
+.btn-inline {
+    text-align: center !important;
+}
+ul.sub-menu {
+    margin-top: 0;
+}
+#top-menu li .menu-item-has-children > a:first-child:after {
+    top: 6px;
+    right: 5px;
+    font-size: 14px;
+    content: "5";
+    font-weight: 400;
+}

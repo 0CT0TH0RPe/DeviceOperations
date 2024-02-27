@@ -1,0 +1,47 @@
+﻿@page "/adddevice"
+@using DeviceOperations.Data
+
+<h3>Add Device</h3>
+
+<form>
+
+    <div class="form-group">
+        <label for="deviceId">Device Id</label>
+        <input type="text" class="form-control" id="deviceId" @bind="newDevice.DeviceID">
+    </div>
+    <div class="form-group">
+        <label for="deviceName">Device Name</label>
+        <input type="text" class="form-control" id="deviceName" @bind="newDevice.Name">
+    </div>
+    <div class="form-group">
+        <label for="deviceType">Device Type</label>
+        <select class="form-control" id="deviceType" @bind="newDevice.DeviceType">
+            @foreach (DeviceType deviceType in Enum.GetValues(typeof(DeviceType)))
+            {
+                <option value="@deviceType">@deviceType</option>
+            }
+        </select>
+    </div>
+
+    <br />
+
+    <button type="button" class="btn btn-primary" @onclick="AddNewDevice">Save</button>
+</form>
+
+@code {
+    Device newDevice = new Device();
+
+    // Declare the 'devices' variable and initialize it with a list of devices
+    List<Device> devices = new List<Device>
+{
+        new Device { DeviceID = 1, Name = "Device 1", DeviceType = DeviceType.BarcodeScanner },
+        new Device { DeviceID = 2, Name = "Device 2", DeviceType = DeviceType.Printer },
+        // Add more devices as needed
+    };
+
+    void AddNewDevice()
+    {
+        devices.Add(newDevice);
+        newDevice = new Device(); // Reset the form
+    }
+}

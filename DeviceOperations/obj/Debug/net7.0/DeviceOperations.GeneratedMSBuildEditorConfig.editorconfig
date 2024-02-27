@@ -1,0 +1,61 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DeviceOperations
+build_property.RootNamespace = DeviceOperations
+build_property.ProjectDir = /Users/bcvh/Projects/DeviceOperations/DeviceOperations/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/bcvh/Projects/DeviceOperations/DeviceOperations
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/bcvh/Projects/DeviceOperations/DeviceOperations/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bcvh/Projects/DeviceOperations/DeviceOperations/Pages/AddDevice.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkRGV2aWNlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bcvh/Projects/DeviceOperations/DeviceOperations/Pages/AddOperation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkT3BlcmF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bcvh/Projects/DeviceOperations/DeviceOperations/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bcvh/Projects/DeviceOperations/DeviceOperations/Pages/OperationsList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3BlcmF0aW9uc0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bcvh/Projects/DeviceOperations/DeviceOperations/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bcvh/Projects/DeviceOperations/DeviceOperations/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-9lzgnezexr
+
+[/Users/bcvh/Projects/DeviceOperations/DeviceOperations/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-yfqtu36vj5
+
+[/Users/bcvh/Projects/DeviceOperations/DeviceOperations/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bcvh/Projects/DeviceOperations/DeviceOperations/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bcvh/Projects/DeviceOperations/DeviceOperations/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
